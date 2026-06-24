@@ -46,7 +46,7 @@ class PriceFeed:
         return round(self._current_price, 2)
 
     def stream(self, ticks: int = 0) -> Iterator[PriceEvent]:
-        """Yield PriceEvent objects.  If *ticks* is 0 the stream is infinite."""
+        """Yield PriceEvent objects. If *ticks* is 0 the stream is infinite."""
         count = 0
         while ticks == 0 or count < ticks:
             price = self._next_price()
