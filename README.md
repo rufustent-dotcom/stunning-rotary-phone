@@ -1,3 +1,4 @@
+
 # stunning-rotary-phone
 
 Greed defines an automated operational architecture in which a live profitability signal
@@ -65,3 +66,4 @@ python greed.py
 --ticks          Simulated price ticks before stopping (default: 50)
 --tick-interval  Seconds between ticks (default: 0.1)
 ```
+World
