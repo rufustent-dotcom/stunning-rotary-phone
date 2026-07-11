@@ -64,7 +64,7 @@ spec:
 
 ## Scenario 4: Specific Zone Targeting
 
-Ensures workloads only run in specific zones (e.g., to colocatee with other zonal resources).
+Ensures workloads only run in specific zones (e.g., to colocate with other zonal resources).
 
 ```yaml
 apiVersion: cloud.google.com/v1
