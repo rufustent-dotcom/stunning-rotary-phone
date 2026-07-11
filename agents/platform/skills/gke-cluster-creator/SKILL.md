@@ -152,7 +152,7 @@ _Note: High cost and strict quota requirements._
 - **ALWAYS** ask for the `location` (Region or Zone).
 - **ALWAYS** ask for a unique `cluster_name`.
 - **CHECK** if the user wants `Access to Google Cloud APIs` (default `cloud-platform` scope is usually best for modern GKE).
-- **WARN** the user about cost if they select GPU or Reginal clusters.
+- **WARN** the user about cost if they select GPU or Regional clusters.
 - **USE** `create_cluster` MCP tool to create the cluster. The `parent` argument is `projects/{PROJECT_ID}/locations/{LOCATION}` and the `cluster` argument is the JSON object. The `cluster.name` is just the short name (e.g. "my-cluster").
 - **IMPORTANT**: When calling `create_cluster`, the `cluster.name` should be the **short name** (e.g., `my-cluster`), NOT the full resource path, because the `parent` argument defines the scope.
 
