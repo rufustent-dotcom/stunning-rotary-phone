@@ -26,7 +26,8 @@ export default function Home() {
     if (spinning !== null) return;
     setSpinning(digit);
     setDialed((prev) => [...prev.slice(-6), digit]);
-    setFactIndex((i) => (i + 1) % FACTS.length);
+    // Show the fact that corresponds to the dialed digit (0 maps to index 9)
+    setFactIndex(digit === 0 ? 9 : digit - 1);
     setTimeout(() => setSpinning(null), 600);
   }
 
