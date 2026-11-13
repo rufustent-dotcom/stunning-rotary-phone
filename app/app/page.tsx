@@ -109,7 +109,7 @@ export default function Home() {
       </div>
 
       <footer className="mt-10 text-amber-400 text-xs">
-        Built with Next.js · Deployed on Vercel
+        Built with Next.js
       </footer>
     </main>
   );
